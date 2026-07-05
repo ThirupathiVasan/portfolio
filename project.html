@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thirupathi Vasan T | Java Full Stack Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#192135;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Animated Background */
+body::before{
+    content:'';
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at 20% 20%, rgba(255,215,0,.15), transparent 25%),
+    radial-gradient(circle at 80% 80%, rgba(59,130,246,.15), transparent 25%);
+    z-index:-1;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(15,23,42,.8);
+    backdrop-filter:blur(12px);
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFD700;
+}
+
+/* Hero Section */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding:20px;
+}
+
+.profile{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:5px solid #FFD700;
+    object-fit:cover;
+    margin-bottom:20px;
+    box-shadow:0 0 30px rgba(255,215,0,.4);
+}
+
+.hero h1{
+    font-size:3.5rem;
+    color:#FFD700;
+}
+
+.hero h2{
+    margin-top:10px;
+    font-size:1.5rem;
+}
+
+.typing{
+    color:#38bdf8;
+    border-right:3px solid white;
+    white-space:nowrap;
+    overflow:hidden;
+    width:22ch;
+    animation:typing 4s steps(22), blink .8s infinite;
+}
+
+@keyframes typing{
+    from{width:0}
+}
+
+@keyframes blink{
+    50%{border-color:transparent}
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 25px;
+    background:#FFD700;
+    color:#111827;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+}
+
+.title{
+    font-size:2rem;
+    color:#FFD700;
+    margin-bottom:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:20px;
+    border:1px solid rgba(255,215,0,.2);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(255,215,0,.2);
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:#FFD700;
+    color:#111827;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.hero h2{
+    font-size:1.1rem;
+}
+
+nav{
+    gap:15px;
+    flex-wrap:wrap;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+
+
+<!-- Replace with your image -->
+<img src="profile.jpg" class="profile" alt="Profile">
+
+<h1>THIRUPATHI VASAN T</h1>
+
+<h2 class="typing">Java Full Stack Developer</h2>
+
+<p style="margin-top:20px;max-width:700px;">
+    Passionate Computer Science Engineer seeking opportunities
+    to build scalable applications and grow as a Software Developer.
+</p>
+
+<a href="resume.pdf" download class="btn">
+    Download Resume
+</a>
+
+
+</section>
+
+<section id="about">
+
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+
+    <p>
+        I am a Computer Science and Engineering graduate with a CGPA of 7.58.
+        I completed Java Full Stack Development training and possess knowledge
+        of Java, Advanced Java, JDBC, MySQL, HTML, CSS and JavaScript.
+
+        As a fresher, I am eager to contribute to software development projects,
+        solve real-world problems, and continuously improve my technical skills.
+    </p>
+
+</div>
+
+
+</section>
+
+<section id="education">
+
+
+<h2 class="title">Education</h2>
+
+<div class="card">
+    <h3>B.E Computer Science and Engineering</h3>
+    <p>2020 - 2024</p>
+    <p>CGPA: 7.58</p>
+</div>
+
+<div class="card">
+    <h3>7th Day Matric Hr. Sec. School</h3>
+    <p>2016-2020</p>
+    <p>percentage: 72% & 56%</p>
+</div>
+
+
+</section>
+
+<section id="skills">
+
+
+<h2 class="title">Technical Skills</h2>
+
+<div class="skills">
+
+    <span class="skill">Java</span>
+    <span class="skill">Advanced Java</span>
+    <span class="skill">JDBC</span>
+    <span class="skill">SQL</span>
+    <span class="skill">MySQL</span>
+    <span class="skill">HTML5</span>
+    <span class="skill">CSS3</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">Git</span>
+    <span class="skill">GitHub</span>
+    <span class="skill">C,C++</span>
+
+</div>
+
+
+</section>
+
+<section id="projects">
+
+
+<h2 class="title">Projects</h2>
+
+<div class="card">
+
+    <h3>Reservation System (Java & MySQL)</h3>
+
+    <br>
+
+    <p>
+        Developed a console-based Reservation System using Java and MySQL.
+        Implemented CRUD operations for reservation management and connected
+        the application to MySQL using JDBC.
+    </p>
+
+    <br>
+
+    <strong>Technologies:</strong>
+
+    Java, JDBC, MySQL, Eclipse IDE
+
+</div>
+
+<div class="card">
+
+    <h3>Personal Portfolio Website</h3>
+
+    <br>
+
+    <p>
+        Designed and developed a responsive personal portfolio website
+        using HTML and CSS to showcase skills, projects, education,
+        certifications and contact information.
+    </p>
+
+    <br>
+
+    <strong>Technologies:</strong>
+
+    HTML5, CSS3
+
+</div>
+
+
+</section>
+
+<section id="certificates">
+
+
+<h2 class="title">Certificates</h2>
+
+<div class="skills">
+
+    <span class="skill">Naan Mudhalvan</span>
+    <span class="skill">Java Full Stack Development</span>
+    <span class="skill">Infosys Springboard</span>
+    <span class="skill">CSC Certificate</span>
+
+</div>
+
+
+</section>
+
+<section id="contact">
+
+
+<h2 class="title">Contact Me</h2>
+
+<div class="card contact">
+
+    <p><strong>Email:</strong>
+    <a href="mailto:thirupathivasant0@gmail.com">
+    thirupathivasant0@gmail.com
+    </a>
+    </p>
+
+    <br>
+
+    <p><strong>Phone:</strong>
+    8072611580
+    </p>
+
+    <br>
+
+    <p><strong>LinkedIn:</strong>
+        <a href="http://https://www.linkedin.com/in/thirupathi-vasan-0a2339200">
+            https://www.linkedin.com/in/thirupathi-vasan-0a2339200
+        </a>
+    </p>
+
+    <br>
+
+    <p><strong>GitHub:</strong>
+    <a href="http://github.com/ThirupathiVasan">
+        http://github.com/ThirupathiVasan
+    </a>
+    </p>
+
+    <br>
+
+    <p><strong>Location:</strong>
+    Tamil Nadu, India
+    </p>
+
+</div>
+
+
+</section>
+
+<footer>
+    <p>© 2026 Thirupathi Vasan T | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
